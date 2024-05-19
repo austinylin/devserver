@@ -1,0 +1,9 @@
+build-essential
+sudo
+ca-certificates
+curl
+git
+tmux
+vim
+openssh-client
+silversearcher-ag

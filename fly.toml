@@ -1,0 +1,18 @@
+# fly.toml app configuration file generated for devserver-thrumming-silence-6364 on 2024-05-18T20:53:15Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'devserver'
+primary_region = 'iad'
+
+[build]
+
+[[mounts]]
+  destination = "/data"
+  source = "devserver"
+
+[[vm]]
+  memory = '4gb'
+  cpu_kind = 'shared'
+  cpus = 2
